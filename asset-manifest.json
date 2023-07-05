@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/AlKostiuk/phonebook-1.git/static/css/main.18e54bd9.css",
-    "main.js": "/AlKostiuk/phonebook-1.git/static/js/main.45b47979.js",
-    "index.html": "/AlKostiuk/phonebook-1.git/index.html",
-    "main.18e54bd9.css.map": "/AlKostiuk/phonebook-1.git/static/css/main.18e54bd9.css.map",
-    "main.45b47979.js.map": "/AlKostiuk/phonebook-1.git/static/js/main.45b47979.js.map"
+    "main.css": "/phonebook-1/static/css/main.18e54bd9.css",
+    "main.js": "/phonebook-1/static/js/main.45b47979.js",
+    "index.html": "/phonebook-1/index.html",
+    "main.18e54bd9.css.map": "/phonebook-1/static/css/main.18e54bd9.css.map",
+    "main.45b47979.js.map": "/phonebook-1/static/js/main.45b47979.js.map"
   },
   "entrypoints": [
     "static/css/main.18e54bd9.css",
