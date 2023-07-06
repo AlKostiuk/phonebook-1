@@ -47,12 +47,15 @@ deleteContact = (evt) => {
     contacts: prevState.contacts.filter(contact => contact.id !== evt.target.closest('li').id),
   }))}
 
+
   filterContacts = (evt) => {
-    this.setState({ filter: evt.target.value.trim() });
+    const filterValue = evt.target.value;
+    this.setState({ filter: filterValue });
   }
 
 
   render(){
+
   return (
     <div className={style.container}>
     <h1 className={style.title}>Contacts</h1>
@@ -63,10 +66,11 @@ deleteContact = (evt) => {
     {this.state.contacts.length ? <div className={style.contactscontainer}>
       <h2 className={style.contactstitle}>Contacts List</h2>
       <Filter filterContacts={this.filterContacts}/>
-      <ContactsList contacts={this.state.filter
-                ? this.state.contacts.filter(obj => obj.name.toLowerCase().includes(this.state.filter.toLowerCase()))
-                : this.state.contacts}
-                deleteContact={this.deleteContact} />
+      <ContactsList deleteContact={this.deleteContact}  contacts={this.state.filter
+  ? this.state.contacts.filter(contact => contact.name.toLowerCase().includes(this.state.filter.toLowerCase()))
+  : this.state.contacts}
+
+                />
     </div> : <p>Add some contacts</p>}
   </div>
 );
